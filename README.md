@@ -48,7 +48,3 @@ The application can be deployed to any static hosting service. For production bu
 ```bash
 npm run build
 ```
-
-## License
-
-MIT
