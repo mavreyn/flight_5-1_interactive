@@ -14,7 +14,7 @@ function App() {
   const mapContainerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhc2VyZXluIiwiYSI6ImNtYTcwZ3NsdzB5a24ybW9sM3dzMzkyZjIifQ.PxFCioKsg2-GApOz6si7DQ'
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
     if (mapContainerRef.current) {
       const map = new mapboxgl.Map({
         container: mapContainerRef.current,
